@@ -1,0 +1,8 @@
+[Unit]
+Description=mqttbridge
+
+[Service]
+ExecStart=/home/tpr/code/mqtt-bridge/target/debug/mqtt-bridge
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+mqtt:
+  host: 192.0.2.123
+  username: admin
+  password: nimda
+  # instance_name: moin
+actions:
+  - name: Turn screen off
+    icon: mdi:power
+    command: /usr/bin/dbus-send --session --print-reply --dest=org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut string:'Turn Off Screen'
+  - name: Sleep some
+    command: /usr/bin/sleep 10
